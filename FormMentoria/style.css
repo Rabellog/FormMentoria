@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body::before{
+    top: 0;
+    left: 0;
+    content: '';
+    position: absolute;
+    z-index: -1;
+    background-color: #000000;
+    width:100%;
+    height: 436px;
+}
+
+p,span,label,button{
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #535971;
+}
+
+header h1{
+    color: #535971;
+    font-family: 'Staatliches', sans-serif;
+    font-size: 48px;
+    line-height: normal;  
+}
+
+header p{
+    margin-top: 18px;
+    color: white;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: normal;
+}
+
+header{
+    width: 417px;
+    margin-top: 140px;
+}
+
+.page{
+    width: 736px;
+    margin: 0 auto;
+}
+
+form{
+    margin-top: 54px;
+    padding: 64px;
+    background-color:#FAFAFC;
+    border-radius: 20px 20px 0px 0px;
+    min-height: 300px;;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+fieldset{
+    border: none;
+}
+
+fieldset legend{
+    color: #535971;
+    font-family: Staatliches;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 34px;
+    width: 100%;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #E6E6F0;   
+    margin-bottom: 36px;
+}
+
+.fieldset-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.input-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-wrapper label{
+    font-size: 14px;
+    line-height: 24px; 
+    margin-bottom: 8px;
+}
+
+.input-wrapper input{
+    background: #E6E6F0;
+    border: 1px solid #d7d7df;
+    border-radius: 8px;
+    height: 56px;
+    font-size: 16px;
+    line-height: 26px;
+    color:#4E4958;
+    padding: 0 24px;
+}
+
+.col-2{
+    display: flex;
+    gap: 22px;
+}
+
+.col-2 > div:nth-child(1){
+    width: 50%;
+}
+
+.col-2 > div:nth-child(2){
+    width: 50%;
+}
+
+.input-wrapper label span{
+    margin-left: 12px;   
+    color: rgb(180, 180, 180);
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.input-wrapper label span:hover{
+    color: #4E4958;
+}
+
+fieldset h2{
+    color: #535971;
+    font-family: Staatliches;
+    font-size: 20px;
+    font-style: normal;
+    line-height: 34px;
+    margin-bottom: 8px;
+}
+
+.col-3,.col-4{
+    display: flex;
+    gap: 10px;
+}
+
+.col-3 > div:nth-child(1){
+    width: 100%;
+    margin-right: 22px;
+}
+
+.col-4 > div:nth-child(1){
+    width: 100%;
+    margin-right: 22px;
+}
+
+.s{
+    margin-top: 16px;
+}
+
+footer{
+    background: #4a4d57;
+    height: 160px;
+    display: flex;
+    flex-direction: column  ;
+    padding: 52px 70px;
+    margin-bottom: 100px;
+    border-radius: 0px 0px 20px 20px;
+}
+
+footer .button{
+    width: 608px;
+    height: 55.652px;
+    border-radius: 20px;
+    background: #E6E6F0;
+    color: #4a4d57;
+    font-family: Staatliches;
+    font-size: 20px;
+    font-style: normal;
+    line-height: 26px;
+    border: 0;
+}
+
+footer .button:hover{
+    background: #cdcdd6;
+}
+
+input:invalid{
+    border: 2px solid #FF1010;
+}

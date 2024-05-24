@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Avançado</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="page">
+        <header>
+            <h1>Mentoria</h1>
+            <p>Preencha o formulário abaixo para agendar a sua mentoria</p>
+        </header>
+
+        <form id="formulario">
+            <fieldset>
+                <legend>
+                    INFORMAÇÕES PESSOAIS
+                </legend>
+
+        <div class="col-2">
+            <div class="input-wrapper">
+                <label for="name">Nome</label>
+                <input type="text" id="name" required/>
+               </div>
+
+               <div class="input-wrapper">
+                <label for="lastname">Sobrenome</label>
+               <input type="text" id="lastname" required/>
+           </div>
+        </div>
+
+        <div class="input-wrapper">
+            <label for="email">E-mail<span>(Digite um email válido)</span></label>
+           <input type="text" id="email" required/>
+       </div>   
+
+       <div class="input-wrapper">
+        <label for="password">Senha<span>(Mínimo 6 caracteres)</span></label>
+       <input type="password" id="password" required/>
+   </div>   
+            </fieldset>
+            <fieldset>
+                <legend>
+                    INFORMAÇÕES DO MENTOR
+                </legend>
+                <div class="input-wrapper">
+                    <label for="name">Nome do seu mentor<span>(Só o primeiro nome)</span></label>
+                    <input type="text" id="name" required/>
+                   </div>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    SEUS HORÁRIOS DISPONÍVEIS
+                </legend>
+
+                <h2>Primeira Mentoria</h2>
+                <div class="col-3">
+                    <div class="input-wrapper">
+                        <label for="date1">Data<span>(DD/MM/AA)</span></label>
+                       <input type="date" id="date1"/>
+                   </div>
+                   <div class="input-wrapper">
+                    <label for="hourbegin1">Das</label>
+                   <input type="time" id="hourbegin1"/>
+                </div>
+                   <div class="input-wrapper">
+                    <label for="hourend1">Até</label>
+                   <input type="time" id="hourend1"/>
+                   </div>
+                 </div>
+
+                 <h2 class="">Segunda Mentoria</h2>
+                 <div class="col-3">
+                    <div class="input-wrapper">
+                        <label for="date1">Data<span>(DD/MM/AA)</span></label>
+                       <input type="date" id="date1"/>
+                   </div>
+                   <div class="input-wrapper">
+                    <label for="hourbegin1">Das</label>
+                   <input type="time" id="hourbegin1"/>
+                </div>
+                   <div class="input-wrapper">
+                    <label for="hourend1">Até</label>
+                   <input type="time" id="hourend1"/>
+                   </div>
+            </div>
+            </fieldset>
+        </form>
+
+         <footer>
+            <input class="button" type="submit" value="SALVAR" form="formulario">
+         </footer>
+    </div>
+</body>
+</html>
